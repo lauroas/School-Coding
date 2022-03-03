@@ -1,0 +1,138 @@
+#variables
+ppoints=0
+Ppoints=0
+a=1
+#intro to game
+print()
+print("Hello! Welcome to the Black History Quiz Show!")
+print()
+playername=input("Please enter your name to get started ")
+print()
+print("Welcome to the show,",playername,".You'll be competing against Paulene from Ottawa!")
+print()
+#first question
+print("Our first question is for Paulene. Here's your question:")
+print()
+print("Who was the brave black woman who stood up on a bus against racism?")
+print()
+print("Alright Paulene, what's your answer?")
+print()
+print("Paulene: Golly, I don't know...")
+print()
+print("Alright then, we'll turn it over to you,",playername,)
+print()
+q1ans=input("Who was that woman on the bus?(please use caps and spaces) ")
+if(q1ans == "Rosa Parks"):
+   print("Correct answer! You get 25 points!")
+   def myfunc():
+       global ppoints
+   ppoints=ppoints+25
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+else:
+   print("Sorry, the correct answer was Rosa Parks")
+   print("Your points:",ppoints,)
+   print("Paulene's points",Ppoints,)
+#second question
+print()
+print("Onto the next question!")
+print()
+print("This one's for you,",playername,)
+print()
+q2ans=input("Which black activist made headlines by refusing to leave the 'whites only' part of the theatre?(please use caps and spaces) ")
+ 
+if(q2ans == "Viola Desmond"):
+   print("Correct! You get 30 points!")
+   def myfunc():
+       global ppoints
+   ppoints=ppoints+30
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+else:
+   print("Sorry, but that's incorrect",playername,)
+   print()
+   print("Paulene, why don't you give it a go... who was that in the theatre?")
+   print()
+   print("Paulene: Well... was it Viola Desmond?")
+   print()
+   print("That's correct! You get 30 points Paulene")
+   def myfunc():
+       global Ppoints
+   Ppoints=Ppoints+30
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+#question three
+print("The next question is only for 5 points, but here it is for you",playername,":")
+print()
+q3ans=input("What month is Black History Month?(please use caps) ")
+ 
+if(q3ans == "February"):
+   print("Correct! You get 5 points!")
+   def myfunc():
+       global ppoints
+   ppoints=ppoints+5
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+else:
+   print("Sorry, but that's the wrong answer", playername,)
+   print()
+   print("Paulene? Do you know?")
+   print()
+   print("Paulene: February?")
+   print()
+   print("Correct! You get 5 points, Paulene.")
+   def myfunc():
+       global Ppoints
+   Ppoints=Ppoints+5
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+#question four
+print()
+print("Alright, time for the 4th question, this ones a little harder. Paulene, here you go:")
+print()
+print("Who invented the steam engine lubricator?")
+print()
+print("Paulene: Was it Elijah McCoy?")
+print()
+print("Correct! You get 45 points for that difficult question.")
+print()
+ 
+if(a==1):
+   def myfunc():
+       global Ppoints
+   Ppoints=Ppoints+45
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+#question five
+print()
+print("Alright now we're onto the final question. This one could be anyone's game, but we'll start with",playername,)
+print()
+q5ans=input("Here's your question: Which black inventor invented the urinalysis machine?(please use caps and spaces) ")
+ 
+if(q5ans == "Dewey Sanderson"):
+   print("Correct! You get 30 points!")
+   def myfunc():
+       global ppoints
+   ppoints=ppoints+30
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+else:
+   print("Sorry, but that's the wrong answer", playername,)
+   print()
+   print("Paulene? Do you know?")
+   print()
+   print("Paulene: Dewey Sanderson?")
+   print()
+   print("Correct! You get 30 points, Paulene!")
+   def myfunc():
+       global Ppoints
+   Ppoints=Ppoints+30
+   print("Your points:",ppoints,)
+   print("Paulene's points:",Ppoints,)
+ 
+print()
+#winner/outro
+if(ppoints>Ppoints):
+   print("Well, congratulations,",playername,",you won! Thanks for playing Paulene and",playername,",I'll see you another time on Black History Game Show!")
+else:
+   print("So sorry",playername,"but you lost to Paulene. Congratulations Paulene and I'll see you another time on Black History Game Show!")
